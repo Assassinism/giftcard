@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Gift Card</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<title>GIFT CARD </title><link rel='stylesheet' href='style.css'><link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
+
+  </head>
+    
+  <body>
+  <div class="wrapper">
+  <div class="giftcard">
+    <div class="card">
+      <div class="back">
+        <section class="detail">
+          <div class="list">
+            <p class="title">HAPPY TEACHER'S DAY MA'AM</p>
+            <p></p>
+            <p class="name">Jolisa</p>
+            <p class="addr">Greetings from BSIS 1C</p>
+            <p class="addr">Salamat</p>
+            <p></p>
+            <p class="tip">your student</p>
+          </div>
+        </section>
+        <section class="operation">
+          <div class="gift">
+            <div class="btn-fr">
+              <div class="gmask"></div>
+              <div class="frbelt"><span></span></div>
+              <div class="bowknot"><span></span></div>
+              <div class="knot"></div>
+            </div>
+          </div>
+          <input class="msg" placeholder="Enter a gift message" />
+          <div class="checkout">
+            <button id="checkout">CLAIM</button>
+          </div>
+        </section>
+      </div>
+      <div class="front">
+        <section class="banner">
+          <div class="logo-bg">
+            <div class="wave">
+              <div class="wave-bk"><span></span></div>
+              <div class="wave-fr"><span></span></div>
+            </div>
+            <div class ="logo apple"></div>
+            <img src="profile.jpg" alt="Example Image" class="logo apple">
+          </div>
+        </section>
+        <section class="info">
+          <div class="list">
+            <p class="title">For Ma'am Juliessa<p class="title"></p>
+            <p class="price">1C Adviser</p>
+          </div>
+          <div class="buy">
+            <div class="btn-bk">
+              <div class="paper"></div>
+              <div class="mask"></div>
+            </div>
+            <button id="buy">OPEN</button>
+            <div class="btn-fr">
+              <div class="paper"><span></span></div>
+              <div class="mask"></div>
+              <div class="bkbelt"><span></span></div>
+              <div class="gmask"></div>
+              <div class="frbelt"><span></span></div>
+              <div class="bowknot"><span></span></div>
+              <div class="knot"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
